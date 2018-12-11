@@ -69,7 +69,7 @@ export default class Home extends Component {
     //recieve schedule output
     // route to new page to display schedule output
   }
-  render() {
+render() {
     return (
       <div>
       <Grid>
@@ -82,7 +82,15 @@ export default class Home extends Component {
               <input id="username" name="username" type="text" />
             </div>
             <div>
-              <label htmlFor="birthdate">Enter your courses (Ex. CS 125, Math 241 etc.)  </label>
+              <label htmlFor="year">Enter academic year </label>
+              <input id="year" name="year" type="text" />
+            </div>
+            <div>
+              <label htmlFor="semester">Enter the term for which to schedule courses </label>
+              <input id="semester" name="semester" type="text" />
+            </div>
+            <div>
+              <label htmlFor="birthdate">Enter the courses you have already taken (Ex. CS 125, MATH 241 etc.)  </label>
               <input id="courses" name="courses" type="text" />
               </div>
             <div>
@@ -104,10 +112,6 @@ export default class Home extends Component {
             <div>
               <label htmlFor="standing">Minimum number of credits you are willing to take</label>
               <input id="minimumCredits" name="minimumCredits" type="text" />
-            </div>
-            <div>
-              <label htmlFor="standing">Number of possible minor-related courses to take</label>
-              <input id="minor" name="minor" type="text" />
             </div>
             <button>Send data!</button>
           </form>
